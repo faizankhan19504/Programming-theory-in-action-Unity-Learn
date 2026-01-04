@@ -1,7 +1,9 @@
+
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Variable Declarations
     [SerializeField] private float speed = 35f;
     [SerializeField]private float Boundary = 21f;
     private void Update()
@@ -9,7 +11,6 @@ public class Player : MonoBehaviour
         PlayerMovement();
         BoundaryCheck();
     }
-
     private void PlayerMovement()
     {
         // Move the player with arrow keys

@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         if (transform.position.z < -lowerZBound)
         {
-            Debug.Log("Enemy went out of bounds and is destroyed.");
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }
